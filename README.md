@@ -33,7 +33,7 @@
 > **问题：**
 > c++: fatal error: 已杀死 signal terminated program cc1plus
 > compilation terminated.
-> 
+> \
 > **解决方法：**
 > 增加交换空间：如果内存不足，增加交换空间可以帮助解决这个问题。你可以创建一个交换文件并启用它来增加交换空间。以下是创建和启用一个4GB交换文件的命令：
 > `sudo fallocate -l 4G /swapfile`
@@ -108,15 +108,11 @@ q       关闭 NerdTree 窗口
 ## 设为默认shell
 `sudo chsh -s $(which zsh)`
 ## 安装oh-my-zsh
-**curl**
-	`sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-**wget**
-	`sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
+**curl**  `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+**wget**  `sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
 ## 插件
-1. **zsh-syntax-highlighting:高亮（命令正确时会绿色显示，否则红色显示）**
-	`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-2. **zsh-autosuggestions:输入命令行时自动补全**
-	`git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+1. **zsh-syntax-highlighting:高亮（命令正确时会绿色显示，否则红色显示）**  `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+2. **zsh-autosuggestions:输入命令行时自动补全**  `git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
 ## 配置文件
 - `ZSH_THEME="agnoster"`
 - `plugins=(zsh-syntax-highlighting)`

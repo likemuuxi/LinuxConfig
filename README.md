@@ -1,3 +1,4 @@
+# Vim配置
 ## 插件安装
 ### 安装vim-plug 插件管理工具
 远程安装
@@ -91,18 +92,37 @@ q       关闭 NerdTree 窗口
 :tabp   前一个 tab
 :tabn   后一个 tab
 ```
-
-
 ## 参考
 - [PowerVim](https://github.com/youngyangyang04/PowerVim)
 - [vim搭建c++环境_vim c++](https://blog.csdn.net/qq_62357480/article/details/126854282?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-126854282-blog-133426883.235%5Ev39%5Epc_relevant_3m_sort_dl_base4&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-126854282-blog-133426883.235%5Ev39%5Epc_relevant_3m_sort_dl_base4&utm_relevant_index=2)
 - [7款优秀Vim插件帮你打造完美IDE](https://zhuanlan.zhihu.com/p/145793963)
 - [Vim使用全指南 (环境配置，插件推荐，美化) (C++,Python,MarkDown,R...)](https://blog.csdn.net/Liukairui/article/details/107392243)
 - [VIM 自动配置（代码补全，代码高亮，符号补全等等） - 广汽白云山 - 博客园 (cnblogs.com)](https://www.cnblogs.com/write-hua/p/7697762.html)
-
-- [ ls 文件夹和文件没有颜色的解决办法](https://www.cnblogs.com/kaerxifa/p/12161658.html)
 - [Vim 配置光标形状和颜色](https://www.jianshu.com/p/65c29ea0a0aa)
-
 - [一个用于在代码中可视化显示缩进级别的vim插件](https://github.com/preservim/vim-indent-guides)
 - [在VIM中显示缩进对齐线_vim缩进对齐线](https://blog.csdn.net/panderang/article/details/78147968)
 
+# 终端美化
+## 安装zsh
+`sudo apt install zsh`
+## 设为默认shell
+`sudo chsh -s $(which zsh)`
+## 安装oh-my-zsh
+**curl**
+`sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+**wget**
+`sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
+## 插件
+**zsh-syntax-highlighting:高亮（命令正确时会绿色显示，否则红色显示）**
+`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+**zsh-autosuggestions:输入命令行时自动补全**
+`git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+## 配置文件
+`ZSH_THEME="agnoster"`
+`plugins=(zsh-syntax-highlighting)`
+`plugins=(zsh-autosuggestions)`
+**重新载入配置文件**
+`source ~/.zshrc`
+## 参考
+- [linux下oh-my-zsh安装及配置-CSDN博客](https://blog.csdn.net/gloriaied/article/details/84645065)
+- [ ls 文件夹和文件没有颜色的解决办法](https://www.cnblogs.com/kaerxifa/p/12161658.html)

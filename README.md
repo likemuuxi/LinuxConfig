@@ -119,7 +119,7 @@ q       关闭 NerdTree 窗口
 ## 安装scoop和模块
 在 PowerShell 中输入下面内容，保证允许本地脚本的执行：
 <br>`set-executionpolicy remotesigned -scope currentuser`
-然后执行下面的命令安装 Scoop：
+<br>然后执行下面的命令安装 Scoop：
 <br>`iex (new-object net.webclient).downloadstring('https://get.scoop.sh')`
 
 ```bash
@@ -156,12 +156,12 @@ Set-PSReadLineKeyHandler -Key DownArrow -ScriptBlock {
 [Microsoft.PowerShell.PSConsoleReadLine]::EndOfLine()
 }
 ```
-[主题推荐]（https://sspai.com/post/52907#:~:text=%E6%9D%A5%E9%85%8D%E7%BD%AE%E5%8D%B3%E5%8F%AF%E3%80%82-,%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90,-%E4%BD%BF%E7%94%A8%E6%9F%90%E4%B8%AA）
+[主题推荐](https://sspai.com/post/52907#:~:text=%E6%9D%A5%E9%85%8D%E7%BD%AE%E5%8D%B3%E5%8F%AF%E3%80%82-,%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90,-%E4%BD%BF%E7%94%A8%E6%9F%90%E4%B8%AA)
 ## 更换字体
 [字体下载地址](https://www.nerdfonts.com/font-downloads)
 **推荐使用**
 <br>[FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/DroidSansMono.zip)
-字体更换步骤：设置>>默认值>>外观>>选择字体
+<br>字体更换步骤：设置>>默认值>>外观>>选择字体
 ![image](https://github.com/likemuuxi/vimrc/assets/85612715/ce95f5a5-5c7e-426e-b838-f2c37e8aecd7)
 ## 参考
 - [5 个 PowerShell 主题，让你的 Windows 终端更好看 - 少数派 (sspai.com)](https://sspai.com/post/52907)

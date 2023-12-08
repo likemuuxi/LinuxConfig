@@ -193,7 +193,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -ScriptBlock {
 ## 配置文件
 - `ZSH_THEME="agnoster"`
 - `plugins=(zsh-syntax-highlighting)`
--`plugins=(zsh-autosuggestions)`
+- `plugins=(zsh-autosuggestions)`
 ## 重新载入配置文件**
 `source ~/.zshrc`
 ## 参考

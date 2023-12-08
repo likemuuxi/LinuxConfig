@@ -32,6 +32,7 @@
 > **问题：**
 > c++: fatal error: 已杀死 signal terminated program cc1plus
 > compilation terminated.
+> 
 > **解决方法：**
 > 增加交换空间：如果内存不足，增加交换空间可以帮助解决这个问题。你可以创建一个交换文件并启用它来增加交换空间。以下是创建和启用一个4GB交换文件的命令：
 > `sudo fallocate -l 4G /swapfile`

@@ -93,15 +93,28 @@ q       关闭 NerdTree 窗口
 :tabn   后一个 tab
 ```
 ## 参考
+### 相关教程
 - [PowerVim](https://github.com/youngyangyang04/PowerVim)
 - [vim搭建c++环境_vim c++](https://blog.csdn.net/qq_62357480/article/details/126854282?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-126854282-blog-133426883.235%5Ev39%5Epc_relevant_3m_sort_dl_base4&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-126854282-blog-133426883.235%5Ev39%5Epc_relevant_3m_sort_dl_base4&utm_relevant_index=2)
 - [7款优秀Vim插件帮你打造完美IDE](https://zhuanlan.zhihu.com/p/145793963)
 - [Vim使用全指南 (环境配置，插件推荐，美化) (C++,Python,MarkDown,R...)](https://blog.csdn.net/Liukairui/article/details/107392243)
 - [VIM 自动配置（代码补全，代码高亮，符号补全等等） - 广汽白云山 - 博客园 (cnblogs.com)](https://www.cnblogs.com/write-hua/p/7697762.html)
 - [Vim 配置光标形状和颜色](https://www.jianshu.com/p/65c29ea0a0aa)
-- [一个用于在代码中可视化显示缩进级别的vim插件](https://github.com/preservim/vim-indent-guides)
 - [在VIM中显示缩进对齐线_vim缩进对齐线](https://blog.csdn.net/panderang/article/details/78147968)
-
+### 插件项目地址
+- [YouCompleteMe: A code-completion engine for Vim ](https://github.com/ycm-core/YouCompleteMe)
+- [ale 异步检查Vim/Neovim中的语法并修复文件，支持语言服务器协议（LSP）](https://github.com/dense-analysis/ale)
+- [auto-pairs: Vim plugin, insert or delete brackets, parens, quotes in pair ](https://github.com/jiangmiao/auto-pairs)
+- [gruvbox: Retro groove color scheme for Vim](https://github.com/morhetz/gruvbox)
+- [preservim/nerdtree: A tree explorer plugin for vim.](https://github.com/preservim/nerdtree)
+- [tokyonight-vim](https://github.com/ghifarit53/tokyonight-vim)
+- [vim-airline: lean & mean status/tabline for vim that's light as air ](https://github.com/vim-airline/vim-airline)
+- [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
+- [vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight)
+- [vim-indent-guides](https://github.com/preservim/vim-indent-guides)
+- [vim-markdown: Markdown Vim Mode](https://github.com/preservim/vim-markdown)
+- [vim-monokai](https://github.com/ku1ik/vim-monokai)
+- [vim-signify: Show a diff using Vim its sign column.](https://github.com/mhinz/vim-signify)
 # 终端美化
 ## 安装zsh
 `sudo apt install zsh`

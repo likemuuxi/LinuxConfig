@@ -113,14 +113,14 @@ q       关闭 NerdTree 窗口
 **wget**
 `sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
 ## 插件
-**zsh-syntax-highlighting:高亮（命令正确时会绿色显示，否则红色显示）**
+1. **zsh-syntax-highlighting:高亮（命令正确时会绿色显示，否则红色显示）**
 `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-**zsh-autosuggestions:输入命令行时自动补全**
+2. **zsh-autosuggestions:输入命令行时自动补全**
 `git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
 ## 配置文件
-`ZSH_THEME="agnoster"`
-`plugins=(zsh-syntax-highlighting)`
-`plugins=(zsh-autosuggestions)`
+- `ZSH_THEME="agnoster"`
+- `plugins=(zsh-syntax-highlighting)`
+-`plugins=(zsh-autosuggestions)`
 **重新载入配置文件**
 `source ~/.zshrc`
 ## 参考

@@ -115,7 +115,58 @@ q       关闭 NerdTree 窗口
 - [vim-markdown: Markdown Vim Mode](https://github.com/preservim/vim-markdown)
 - [vim-monokai](https://github.com/ku1ik/vim-monokai)
 - [vim-signify: Show a diff using Vim its sign column.](https://github.com/mhinz/vim-signify)
-# 终端美化
+# Windows终端美化
+## 安装scoop和模块
+在 PowerShell 中输入下面内容，保证允许本地脚本的执行：
+<br>`set-executionpolicy remotesigned -scope currentuser`
+然后执行下面的命令安装 Scoop：
+<br>`iex (new-object net.webclient).downloadstring('https://get.scoop.sh')`
+
+```bash
+# 安装 posh-git 和 oh-my-posh 这两个模块
+Install-Module posh-git -Scope CurrentUser 
+Install-Module oh-my-posh -Scope CurrentUser
+
+# 如果之前没有配置文件，就新建一个 PowerShell 配置文件
+if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+用记事本打开配置文件
+notepad $PROFILE
+```
+在配置文件中添加下面的内容
+```
+Import-Module oh-my-posh 
+#设置主题
+Set-PoshPrompt Paradox
+# 引入posh-git
+Import-Module posh-git 
+# 设置 Tab 键补全
+Set-PSReadlineKeyHandler -Key Tab -Function Complete
+# 设置 Ctrl+d 为菜单补全和 Intellisense
+Set-PSReadLineKeyHandler -Key "Ctrl+d" -Function MenuComplete 
+# 设置 Ctrl+z 为撤销
+Set-PSReadLineKeyHandler -Key "Ctrl+z" -Function Undo 
+# 设置向上键为后向搜索历史记录
+Set-PSReadLineKeyHandler -Key UpArrow  -ScriptBlock {
+[Microsoft.PowerShell.PSConsoleReadLine]::HistorySearchBackward()
+[Microsoft.PowerShell.PSConsoleReadLine]::EndOfLine()
+}
+# 设置向下键为前向搜索历史纪录
+Set-PSReadLineKeyHandler -Key DownArrow -ScriptBlock {
+[Microsoft.PowerShell.PSConsoleReadLine]::HistorySearchForward()
+[Microsoft.PowerShell.PSConsoleReadLine]::EndOfLine()
+}
+```
+[主题推荐]（https://sspai.com/post/52907#:~:text=%E6%9D%A5%E9%85%8D%E7%BD%AE%E5%8D%B3%E5%8F%AF%E3%80%82-,%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90,-%E4%BD%BF%E7%94%A8%E6%9F%90%E4%B8%AA）
+## 更换字体
+[字体下载地址](https://www.nerdfonts.com/font-downloads)
+**推荐使用**
+<br>[FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/DroidSansMono.zip)
+字体更换步骤：设置>>默认值>>外观>>选择字体
+![image](https://github.com/likemuuxi/vimrc/assets/85612715/ce95f5a5-5c7e-426e-b838-f2c37e8aecd7)
+## 参考
+- [5 个 PowerShell 主题，让你的 Windows 终端更好看 - 少数派 (sspai.com)](https://sspai.com/post/52907)
+- [Windows Terminal 完美配置 PowerShell 7.1 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/137595941)
+# Linux终端美化
 ## 安装zsh
 `sudo apt install zsh`
 ## 设为默认shell
@@ -141,3 +192,4 @@ q       关闭 NerdTree 窗口
 ## 参考
 - [linux下oh-my-zsh安装及配置-CSDN博客](https://blog.csdn.net/gloriaied/article/details/84645065)
 - [ ls 文件夹和文件没有颜色的解决办法](https://www.cnblogs.com/kaerxifa/p/12161658.html)
+

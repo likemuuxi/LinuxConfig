@@ -1,3 +1,13 @@
+# Vscode
+## 安装code：
+`sudo snap install code --classic`
+## 后台运行
+使用screen命令的步骤如下：
+打开终端。
+输入命令 `screen`，这会创建一个新的screen会话。
+在新的screen会话中，输入你要运行的命令，比如 `code tunnel`。
+按 Ctrl+a 然后按 d，这会让你的程序在新的screen会话中运行，同时你又可以回到你的原始终端会话。
+你可以通过输入 `screen -r` 来回到你的screen会话，查看程序的运行情况。
 # Vim配置
 ## 插件安装
 ### 安装vim-plug 插件管理工具

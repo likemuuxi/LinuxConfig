@@ -135,6 +135,7 @@ q       关闭 NerdTree 窗口
 - [vim-signify: Show a diff using Vim its sign column.](https://github.com/mhinz/vim-signify)
 - [vim-oscyank: 一个vim插件，用于通过带有OSC52的SSH复制文本](https://github.com/ojroques/vim-oscyank)
 - [EscSync配置同步插件](https://github.com/Me1onRind/EscSync)
+- [onedark主题](https://github.com/joshdick/onedark.vim)
 ### vim主题搜索
 - https://vimcolorschemes.com/
 - https://jetbrains-active.com/

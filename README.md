@@ -135,6 +135,9 @@ q       关闭 NerdTree 窗口
 - [vim-signify: Show a diff using Vim its sign column.](https://github.com/mhinz/vim-signify)
 - [vim-oscyank: 一个vim插件，用于通过带有OSC52的SSH复制文本](https://github.com/ojroques/vim-oscyank)
 - [EscSync配置同步插件](https://github.com/Me1onRind/EscSync)
+### vim主题搜索
+- https://vimcolorschemes.com/
+- https://jetbrains-active.com/
 # Windows终端美化
 ## 安装scoop和模块
 在 PowerShell 中输入下面内容，保证允许本地脚本的执行：
